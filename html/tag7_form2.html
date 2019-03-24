@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <style>
+        @font-face{
+            font-family: ProximaNovaSoftW03-Regularimport;
+            src: url('ProximaNovaSoftW03-Regular')
+        }
+        html{
+            font-family: ProximaNovaSoftW03-Regular
+            
+        }
+    
+    </style>
+</head>
+<body>
+    <label for="username">Username</label>
+    <input id = 'username' type="text">
+    <br>
+    <br>
+    <input type="text" list = 'fun'>
+<!--    we can add values to this by submitting the response-->
+    <datalist id = fun>
+        <option value="soccer">soccer</option>
+        <option value="tennis">tennis</option>
+        <option value="run">run</option>
+    </datalist>
+    <br>
+    <meter min = 0 max = 10 value = 5></meter>
+    <br>
+    <progress min = 0 max = 10 value = 3.5></progress>
+    <br>
+    <input id = 'numberOfPeople' type="range" name = 'people' min = '1' max = '10' value = 0 ><span id = 'people'></span>
+    
+    <script>
+        input = document.querySelector('#numberOfPeople');
+        span = document.querySelector('span');
+        val = input.value;
+        span.innerHTML = val;
+        input.oninput = function(e){
+            val = this.value;
+            span = document.querySelector('span');
+            span.innerHTML = val;
+        };
+    </script>
+    <br>
+    <input type="hidden" value = 'secretcode'>
+
+
+</body>
+</html>

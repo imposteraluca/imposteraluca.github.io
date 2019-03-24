@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Table</title>
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+        td,th{
+            width: 150px;
+            height: 30px;
+            padding: 5px;
+        }
+        tr:first-child {
+            background-color: darkolivegreen;
+            color: floralwhite;
+        }
+    </style>
+</head>
+<body>
+<!--table[border]>(tr>td*2)*3-->
+    <table border>
+       <caption>Alan's Contact</caption>
+        <tr>
+            <th>Name</th>
+            <th>Phone</th>
+        </tr>
+        <tr>
+            <td rowspan = 2>Alan</td>
+            <td>(519)111-1111</td>
+        </tr>
+        <tr>
+            <td>(519)111-1112</td>
+        </tr>
+        <tr>
+            <td colspan = 2>2019</td>
+        </tr>
+    </table>
+</body>
+</html>
