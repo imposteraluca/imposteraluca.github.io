@@ -2,239 +2,115 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Home</title>
+    <title>absolute numbskull</title>
     <link href="https://fonts.googleapis.com/css?family=Quicksand|Raleway" rel="stylesheet">
-       <style>
-           html{
-               font-family: "Raleway", sans-serif;
-               text-align: center;
-           }
-        header{
-            width: 95%;
-            background-color: #A5D9B8;
-            position: fixed;
-            height: 95px;
-            color: white;
-            font-family: "Raleway", sans-serif;
-            z-index: 1000;
-            text-decoration: none;
-            float: top;
+    <style>
+        marquee{
+            font-size: 60px;
+            letter-spacing: 50px;
+            font-family: "Quicksand", serif;
+            font-weight: 600
         }
-           .sidenav {
-               height: 500px;
-               width: 200px;
-               position: relative;
-               z-index: 0;
-               top: 0;
-               left: 0;
-               background-color: #7E84;
-               overflow-x: hidden;
-               padding-top: 110px;
-               padding-left: 20px;
-               font-family: "Raleway", sans-serif;
-               color: white;
-               float: left;
-               
-           }
-           .main {
-               margin-left: 200px;
-           }
-           .container > div {
-            display: inline-block;
-            display: -moz-inline-box;
-            *display: inline; /* For IE7 */
-            zoom: 1; /* Trigger hasLayout */
-            width: 20%;
-            text-align: center;
+        .blinking{
+            animation:blinkingText 0.1s infinite;
             }
-        pre {
-            font-size: 20px;
-            font-family: "Raleway", sans-serif;
-            text-decoration: none;
-               
-        }
-           summary::-webkit-details-marker {
-              display: none
+        @keyframes blinkingText{
+            0%{     color: #ff0000;    }
+            49%{    color: #6b1b83; }
+            50%{    color: #1c23db; }
+            99%{    color: #00ff45;  }
+            100%{   color: #000;    }
+}
+        .blinking1{
+            animation:blinkingText 3s infinite;
             }
-           .link{ color: white}
-           .link:hover {color: #A5D9B8}
-           .links{ color: white}
-           .links:hover {color: #A5D9B8}
-           details{
-               text-align: left;
-           }
-           summary{
-               outline: none;
-           }
-           
+        @keyframes blinkingText{
+            0%{     color: #ff0000;    }
+            49%{    color: #6b1b83; }
+            50%{    color: #1c23db; }
+            99%{    color: #00ff45;  }
+            100%{   color: #000;    }
+}
     
     </style>
+    
 </head>
 <body>
-
-
-<!--    <header style = 'text-align : center''position: fixed'><br><pre><a href="" style = 'color: white'>HOME</a>    <a href="" style = 'color: white''text-decoration: none'>ABOUT US</a>    <a href="" style = 'color: white'>CONTACT US</a></pre></header>-->
-    <header><div class = 'container'>
-      <br>
-      <br>
-       <div><a href="index.html" style = 'color: white'>HOME</a></div>
-       <div><a href="aboutus.html" style = 'color: white'>ABOUT US</a></div>
-       <div><a href="product.html" style = 'color: white'>PRODUCTS</a></div>
-       <div><a href="contactus.html" style = 'color: white'>CONTACT US</a></div>
-        
-        
-    </div>
-   </header>
-
-    <div id = 'mySidenav' class = 'sidenav'>
-        <details>
-            <summary class = 'link'>Kachow</summary>
-            <p style = 'text-indent: 30px' class = 'link'>yahoo</p>
-            <p style = 'text-indent: 30px' class = 'link'>yahoo</p>
-            <p style = 'text-indent: 30px' class = 'link'>yahoo</p>
-            <p style = 'text-indent: 30px' class = 'link'>yahoo</p>
-            <p style = 'text-indent: 30px' class = 'link'>yahoo</p>
-     
-        </details>
-        <br>
-        <details>
-            <summary class = 'link'>Yeehaw</summary>
-            <p style = 'text-indent: 30px' class = 'link'>yahoo</p>
-            <p style = 'text-indent: 30px' class = 'link'>yahoo</p>
-            <p style = 'text-indent: 30px' class = 'link'>yahoo</p>
-            <p style = 'text-indent: 30px' class = 'link'>yahoo</p>
-            <p style = 'text-indent: 30px' class = 'link'>yahoo</p>
-     
-        </details>
-        <br>
-        <details>
-            <summary class = 'link'>Kachow</summary>
-            <p style = 'text-indent: 30px' class = 'link'>yahoo</p>
-            <p style = 'text-indent: 30px' class = 'link'>yahoo</p>
-            <p style = 'text-indent: 30px' class = 'link'>yahoo</p>
-            <p style = 'text-indent: 30px' class = 'link'>yahoo</p>
-            <p style = 'text-indent: 30px' class = 'link'>yahoo</p>
-     
-        </details>
-        <br>
-        <details>
-            <summary class = 'link'>Yeehaw</summary>
-            <p style = 'text-indent: 30px' class = 'link'>yahoo</p>
-            <p style = 'text-indent: 30px' class = 'link'>yahoo</p>
-            <p style = 'text-indent: 30px' class = 'link'>yahoo</p>
-            <p style = 'text-indent: 30px' class = 'link'>yahoo</p>
-            <p style = 'text-indent: 30px' class = 'link'>yahoo</p>
-     
-        </details>
+   <script>
+       var n = prompt("type your name");
+       n = n.toLowerCase();
     
-    </div>
-    <h1>
-        <br>
-        <br>
-        <br>
-        <br>
-        home
-    </h1>
+    </script>
+    <marquee class = "blinking1" behavior="scroll" direction="right" scrollamount="130"><script>document.write(n)</script> you absolute numbskull</marquee>
+    <br>
+    <marquee class = "blinking" behavior="scroll" direction="left" scrollamount="30"><script>document.write(n)</script> you absolute numbskull</marquee>
+    <br>
+    <marquee class = "blinking1" behavior="scroll" direction="left" scrollamount="130"><script>document.write(n)</script> you absolute numbskull</marquee>
+    <br>
+    <marquee class = "blinking" behavior="scroll" direction="left" scrollamount="30"><script>document.write(n)</script> you absolute numbskull</marquee>
+    <br>
+    <marquee class = "blinking1" behavior="scroll" direction="right" scrollamount="130"><script>document.write(n)</script> you absolute numbskull</marquee>
+    <br>
+    <marquee class = "blinking" behavior="scroll" direction="left" scrollamount="30"><script>document.write(n)</script> you absolute numbskull</marquee>
+    <br>
+    <marquee class = "blinking1" behavior="scroll" direction="left" scrollamount="130"><script>document.write(n)</script> you absolute numbskull</marquee>
+    <br>
+    <marquee class = "blinking" behavior="scroll" direction="left" scrollamount="30"><script>document.write(n)</script> you absolute numbskull</marquee>
+    <br>
+    <marquee class = "blinking1" behavior="scroll" direction="right" scrollamount="130"><script>document.write(n)</script> you absolute numbskull</marquee>
+    <br>
+    <marquee class = "blinking" behavior="scroll" direction="left" scrollamount="30"><script>document.write(n)</script> you absolute numbskull</marquee>
+    <br>
+    <marquee class = "blinking1" behavior="scroll" direction="left" scrollamount="130"><script>document.write(n)</script> you absolute numbskull</marquee>
+    <br>
+    <marquee class = "blinking" behavior="scroll" direction="left" scrollamount="30"><script>document.write(n)</script> you absolute numbskull</marquee>
+    <br>
+    <marquee class = "blinking1" behavior="scroll" direction="right" scrollamount="130"><script>document.write(n)</script> you absolute numbskull</marquee>
+    <br>
+    <marquee class = "blinking" behavior="scroll" direction="left" scrollamount="30"><script>document.write(n)</script> you absolute numbskull</marquee>
+    <br>
+    <marquee class = "blinking1" behavior="scroll" direction="left" scrollamount="130"><script>document.write(n)</script> you absolute numbskull</marquee>
+    <br>
+    <marquee class = "blinking" behavior="scroll" direction="left" scrollamount="30"><script>document.write(n)</script> you absolute numbskull</marquee>
+    <br>
+    <marquee class = "blinking1" behavior="scroll" direction="right" scrollamount="130"><script>document.write(n)</script> you absolute numbskull</marquee>
+    <br>
+    <marquee class = "blinking" behavior="scroll" direction="left" scrollamount="30"><script>document.write(n)</script> you absolute numbskull</marquee>
+    <br>
+    <marquee class = "blinking1" behavior="scroll" direction="left" scrollamount="130"><script>document.write(n)</script> you absolute numbskull</marquee>
+    <br>
+    <marquee class = "blinking" behavior="scroll" direction="left" scrollamount="30"><script>document.write(n)</script> you absolute numbskull</marquee>
+    <br>
+    <marquee class = "blinking1" behavior="scroll" direction="right" scrollamount="130"><script>document.write(n)</script> you absolute numbskull</marquee>
+    <br>
+    <marquee class = "blinking" behavior="scroll" direction="left" scrollamount="30"><script>document.write(n)</script> you absolute numbskull</marquee>
+    <br>
+    <marquee class = "blinking1" behavior="scroll" direction="left" scrollamount="130"><script>document.write(n)</script> you absolute numbskull</marquee>
+    <br>
+    <marquee class = "blinking" behavior="scroll" direction="left" scrollamount="30"><script>document.write(n)</script> you absolute numbskull</marquee>
+    <br>
+    <marquee class = "blinking1" behavior="scroll" direction="right" scrollamount="130"><script>document.write(n)</script> you absolute numbskull</marquee>
+    <br>
+    <marquee class = "blinking" behavior="scroll" direction="left" scrollamount="30"><script>document.write(n)</script> you absolute numbskull</marquee>
+    <br>
+    <marquee class = "blinking1" behavior="scroll" direction="left" scrollamount="130"><script>document.write(n)</script> you absolute numbskull</marquee>
+    <br>
+    <marquee class = "blinking" behavior="scroll" direction="left" scrollamount="30"><script>document.write(n)</script> you absolute numbskull</marquee>
+    <br>
+    <marquee class = "blinking1" behavior="scroll" direction="right" scrollamount="130"><script>document.write(n)</script> you absolute numbskull</marquee>
+    <br>
+    <marquee class = "blinking" behavior="scroll" direction="left" scrollamount="30"><script>document.write(n)</script> you absolute numbskull</marquee>
+    <br>
+    <marquee class = "blinking1" behavior="scroll" direction="left" scrollamount="130"><script>document.write(n)</script> you absolute numbskull</marquee>
+    <br>
+    <marquee class = "blinking" behavior="scroll" direction="left" scrollamount="30"><script>document.write(n)</script> you absolute numbskull</marquee>
+    <br>
+    <marquee class = "blinking1" behavior="scroll" direction="right" scrollamount="130"><script>document.write(n)</script> you absolute numbskull</marquee>
+    <br>
     
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+
+<iframe hidden autoplay width="560" height="315" src="https://www.youtube.com/embed/vtkGtXtDlQA?autoplay=1&start=3" frameborder="0" allow = "autoplay" allowfullscreen></iframe>
+
+       
 </body>
 </html>
